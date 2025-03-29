@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snackbar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css">
+    <link rel="stylesheet" href="./css/2-snackbar.css">
+</head>
+<body>
+    <form class="form">
+        <div class="main-wrapper"> </div>
+        <label class="label-ms">
+          Delay (ms)
+          <input class="input-ms" type="number" name="delay" required />
+        </label>
+      
+        <fieldset class="wrapper">
+          <legend class="legend-fld">State</legend>
+          <label class="label-fld">
+            <input class="input-fld" type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label class="label-fld">
+            <input class="input-fld" type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+      
+        <button class="btn-snackbar" type="submit">Create notification</button>
+      </form>
+      
+    <script type="module" src="./js/2-snackbar.js"></script>
+</body>
+</html>
